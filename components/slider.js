@@ -2,43 +2,35 @@ class MySlider extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <section>
-        <div class="container mx-auto z-0">
+        <div class="container mx-auto z-0 lg:h-[90vh]">
             <div class="relative">
-                <div class="h[50vh] bg-gray-200">
+                <div class="h[50vh] bg-gray-200 lg:h-[90vh]">
                     <ul id="slider">
-                        <li class="h-[50vh] relative " >
+                        <li class="h-[50vh] relative lg:h-[90vh]" >
                             <img class="h-full w-full object-cover "
-                                src="https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg"
+                                src="https://www.mdzol.com/u/fotografias/m/2022/10/21/f1280x720-1302683_1434358_5050.jpg"
                                 alt="">
-                            <div class="absolute top-0 left-0 h-full w-full flex">
-                                <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">heading 1
-                                </h2>
+                            <div class="absolute top-0 left-0 h-full w-full flex">                                
                             </div>
                         </li>
-                        <li class="h-[50vh] relative hidden">
+                        <li class="h-[50vh] relative hidden lg:h-[90vh]">
                             <img class="h-full w-full object-cover "
                                 src="https://mundosjumbo.cl/wp-content/uploads/sites/3/2016/05/GettyImages-1146906219-1.jpg"
                                 alt="">
-                            <div class="absolute top-0 left-0 h-full w-full flex">
-                                <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">heading 2
-                                </h2>
+                            <div class="absolute top-0 left-0 h-full w-full flex">                                
                             </div>
                         </li>
-                        <li class="h-[50vh] relative hidden">
+                        <li class="h-[50vh] relative hidden lg:h-[90vh]">
                             <img class="h-full w-full object-cover "
                                 src="https://i.pinimg.com/736x/2a/23/a1/2a23a10d141bbc2b677ed4bb607ea17c.jpg" alt="">
-                            <div class="absolute top-0 left-0 h-full w-full flex">
-                                <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">heading 3
-                                </h2>
+                            <div class="absolute top-0 left-0 h-full w-full flex">                                
                             </div>
                         </li>
-                        <li class="h-[50vh] relative hidden">
+                        <li class="h-[50vh] relative hidden lg:h-[90vh]">
                             <img class="h-full w-full object-cover "
                                 src="https://tofuu.getjusto.com/orioneat-prod/ZKd73g2NERLhuw8YE-POST%205%20al%2011-13.jpg"
                                 alt="">
-                            <div class="absolute top-0 left-0 h-full w-full flex">
-                                <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">heading 4
-                                </h2>
+                            <div class="absolute top-0 left-0 h-full w-full flex">                                
                             </div>
                         </li>
                     </ul>

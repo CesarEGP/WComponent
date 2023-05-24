@@ -10,11 +10,13 @@ mi-header {
 mi-slider {
     z-index: 0;
     margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 @media (max-width: 1023px) {
     mi-slider {
         z-index: 0;
         margin-top: 0vh;
+        margin-bottom: 0vh;
     }
 }
