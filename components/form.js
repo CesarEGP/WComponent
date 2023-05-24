@@ -39,7 +39,7 @@ class Myform extends HTMLElement {
                     </div>
                 </form>
                 <p class="mt-10 text-center text-sm text-gray-500">
-                    Not an account yet? <a class="underline" href="">Create one</a>
+                    Not an account yet? <a class="underline" href="singUp.html">Create one</a>
                 </p>
             </div>
         </div>

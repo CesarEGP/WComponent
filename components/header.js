@@ -23,7 +23,7 @@ class Myheader extends HTMLElement {
                         <a href="form.html" class="text-white border border-white py-2.5 px-5 rounded-md hover:bg-white hover:text-slate-800 duration-500 
                         ease-in-out 
                         mb-8 lg:mb-0">Iniciar Sesión</a>
-                        <a href="#" class="text-white bg-slate-800  border border-blue-500 py-2.5 px-5 rounded-md  hover:bg-black hover:border-blue-600 
+                        <a href="singUp.html" class="text-white bg-slate-800  border border-blue-500 py-2.5 px-5 rounded-md  hover:bg-black hover:border-blue-600 
                         transition duration-500 ease-in-out lg:ml-10">Registrate</a>
                     </div>                    
                 </div>                                

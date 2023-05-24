@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+class Myheader3 extends HTMLElement {
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-4 z-10">
+    connectedCallback() {
+        this.innerHTML = `
+        <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-4 z-10">
         <nav class="relative">
             <div class="container mx-auto flex flex-grow px-8 xl:px-0 ">
                 <div class="flex lg:hidden">
@@ -37,14 +27,28 @@
                         <a href="index.html" class="text-white border border-white py-2.5 px-5 rounded-md hover:bg-white hover:text-slate-800 duration-500 
                         ease-in-out 
                         mb-8 lg:mb-0">Atras</a>
-                        <a href="#" class="text-white bg-slate-800  border border-blue-500 py-2.5 px-5 rounded-md  hover:bg-black hover:border-blue-600 
-                        transition duration-500 ease-in-out lg:ml-10">Registrate</a>
+                        <a href="form.html" class="text-white bg-slate-800  border border-blue-500 py-2.5 px-5 rounded-md  hover:bg-black hover:border-blue-600 
+                        transition duration-500 ease-in-out lg:ml-10">Login</a>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
-    <script src="components/header.js"></script>
-</body>
+        </header>           
+        `;
+        const menuElement = this.shadowRoot.querySelector('#menu');
+        menuElement.onclick = openMenu;
+    }
+}
+window.customElements.define("mi-header3", Myheader3);
 
-</html>
+function openMenu() {
+    let menu = document.getElementById('menu');
+    let logo = document.getElementById('logo');
+    if (menu.classList.contains('hidden')) {
+        logo.classList.add('hidden');
+        menu.classList.remove('hidden');
+    } else {
+        menu.classList.add('hidden');
+        logo.classList.remove('hidden');
+    }
+}
