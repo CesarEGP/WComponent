@@ -7,6 +7,13 @@ mi-header {
     z-index: 100;
 }
 
+mi-header2 {
+    z-index: 100;
+}
+mi-form {
+    z-index: 10;
+}
+
 mi-slider {
     z-index: 0;
     margin-top: 2vh;
